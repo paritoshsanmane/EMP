@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Assessment Form</title>
+</head>
+<body>
+    <h2>Skill Assessment</h2>
+    <form action="process_skill_assessment.php" method="POST">
+        <h3>Technical Skills</h3>
+        <fieldset>
+            <legend>Database</legend>
+            <label for="db_basic">Basic understanding:</label>
+            <select id="db_basic" name="db_basic">
+                <option value="0">No understanding</option>
+                <option value="1">Limited understanding</option>
+                <option value="2">Moderate understanding</option>
+                <option value="3">Proficient understanding</option>
+                <option value="4">Advanced understanding</option>
+            </select>
+            <br>
+            <br>
+
+            <legend>Programming</legend>
+            <label for="prog_basic">Basic understanding:</label>
+            <select id="prog_basic" name="prog_basic">
+                <option value="0">No understanding</option>
+                <option value="1">Limited understanding</option>
+                <option value="2">Moderate understanding</option>
+                <option value="3">Proficient understanding</option>
+                <option value="4">Advanced understanding</option>
+            </select>
+            <br>
+            <br>
+
+            <!-- Add similar fields for other technical skills -->
+            <!-- Java -->
+            <!-- C# -->
+            <!-- Python -->
+            <!-- Web Programming -->
+            <!-- Other -->
+        </fieldset>
+
+        <h3>Soft Skills</h3>
+        <fieldset>
+            <legend>Verbal Communication</legend>
+            <label for="verbal_communication">Rating:</label>
+            <select id="verbal_communication" name="verbal_communication">
+                <option value="0">No proficiency</option>
+                <option value="1">Limited proficiency</option>
+                <option value="2">Moderate proficiency</option>
+                <option value="3">Good proficiency</option>
+                <option value="4">Excellent proficiency</option>
+            </select>
+            <br>
+            <br>
+
+            <legend>Written Communication</legend>
+            <label for="written_communication">Rating:</label>
+            <select id="written_communication" name="written_communication">
+                <option value="0">No proficiency</option>
+                <option value="1">Limited proficiency</option>
+                <option value="2">Moderate proficiency</option>
+                <option value="3">Good proficiency</option>
+                <option value="4">Excellent proficiency</option>
+            </select>
+            <br>
+            <br>
+
+            <!-- Add similar fields for other soft skills -->
+            <!-- Any other foreign Language -->
+            <!-- Teamwork -->
+            <!-- Problem Solving -->
+            <!-- Decision making -->
+            <!-- Leadership -->
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

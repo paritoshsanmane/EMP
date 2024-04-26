@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: navy;
+            color: white;
+            padding: 10px 0;
+            margin: 8px 0;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background-color: navy;
+            }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="form-container">
+        <h2>Register</h2>
+        <form id="registrationForm" action="#" method="post">
+            <label for="reg_user_type">Register as:</label>
+            <select id="reg_user_type" name="reg_user_type">
+                <option value="employee">Employee</option>
+                <option value="manager">Manager</option>
+            </select>
+            <label for="register_username">Username:</label>
+            <input type="text" id="register_username" name="register_username" required>
+            <label for="register_password">Password:</label>
+            <input type="password" id="register_password" name="register_password" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</html>
+
